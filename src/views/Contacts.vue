@@ -33,9 +33,7 @@
 		<div id="app-content">
 			<div id="app-content-wrapper">
 				<!-- loading -->
-				<!-- <import-screen v-if="importState.stage != 'default'" /> -->
-				<import-screen v-if="true" />
-				<!-- ^ part of WIP -->
+				<import-screen v-if="importState.stage != 'default'" />
 				<template v-else>
 					<!-- contacts list -->
 					<content-list :list="contactsList" :contacts="contacts" :loading="loading" />
@@ -85,6 +83,8 @@ export default {
 	data() {
 		return {
 			loading: true
+			// loading: true,
+			// showScreen: true
 		}
 	},
 

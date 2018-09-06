@@ -34,14 +34,16 @@
 
 export default {
 	name: 'ImportScreen',
+
 	computed: {
 		importState() {
 			return this.$store.getters.getImportState
 		}
 	},
+
 	methods: {
 		closeScreen(event) {
-			alert('Close import screen?')
+			this.$store.dispatch('changeStage', 'default')
 		}
 	}
 }

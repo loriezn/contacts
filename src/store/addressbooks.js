@@ -254,7 +254,6 @@ const actions = {
 			context.commit('addContactToAddressbook', contact)
 			context.commit('appendGroupsFromContacts', [contact])
 		})
-		context.commit('changeStage', 'default')
 	},
 
 	/**
