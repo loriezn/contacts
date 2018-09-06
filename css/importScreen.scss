@@ -34,11 +34,10 @@
 		position: absolute; 
 		left: 25%;
 	}
-	&__close {
+	.icon-close {
 		position: absolute; 
 		right: 5%;
 		top: 10%;
-		// background-size: 24px;
-		// ^ part of WIP
+		background-size: 24px;
 	}
 }

@@ -33,8 +33,8 @@
 		<div id="app-content">
 			<div id="app-content-wrapper">
 				<!-- loading -->
-				<import-screen v-if="importState.stage != 'default'" />
-				<!-- <import-screen v-if="true" /> -->
+				<!-- <import-screen v-if="importState.stage != 'default'" /> -->
+				<import-screen v-if="true" />
 				<!-- ^ part of WIP -->
 				<template v-else>
 					<!-- contacts list -->
