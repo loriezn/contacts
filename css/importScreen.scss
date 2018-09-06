@@ -34,4 +34,11 @@
 		position: absolute; 
 		left: 25%;
 	}
+	&__close {
+		position: absolute; 
+		right: 5%;
+		top: 10%;
+		// background-size: 24px;
+		// ^ part of WIP
+	}
 }

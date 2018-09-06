@@ -22,6 +22,7 @@
 
 <template>
 	<div class="emptycontent import-screen">
+		<p class="icon-close import-screen__close" @click="closeScreen" />
 		<p class="icon-upload" />
 		<h3 class="import-screen__header">{{ t('contacts', 'Importing into') }} {{ importState.addressbook }}</h3>
 		<progress :max="importState.total" :value="importState.accepted" class="import-screen__progress" />
@@ -36,6 +37,11 @@ export default {
 	computed: {
 		importState() {
 			return this.$store.getters.getImportState
+		}
+	},
+	methods: {
+		closeScreen(event) {
+			alert('Close import screen?')
 		}
 	}
 }
