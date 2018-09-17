@@ -27,6 +27,10 @@
 		<h3 class="import-screen__header">{{ t('contacts', 'Importing into') }} {{ importState.addressbook }}</h3>
 		<progress :max="importState.total" :value="importState.accepted" class="import-screen__progress" />
 		<p class="import-screen__tracker">{{ Math.floor(importState.accepted/(importState.total + 1)) * 100 }} %</p>
+		<p>Accepted:</p>
+		<p>{{ importState.accepted }}</p>
+		<p>Denied: </p>
+		<p>{{ importState.denied }}</p>
 	</div>
 </template>
 
